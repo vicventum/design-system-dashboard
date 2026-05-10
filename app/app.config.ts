@@ -4,18 +4,18 @@ export default defineAppConfig({
     ui: {
         ...components,
         colors: {
-            primary: 'brand-blue',
-            secondary: 'brand-purple',
-            accent: 'brand-yellow',
+            primary: 'brand-black',
+            secondary: 'brand-grey',
+            accent: 'brand-grey',
             success: 'brand-green',
             warning: 'brand-orange',
             error: 'brand-red',
-            info: 'brand-blue-sky',
+            info: 'brand-grey',
             neutral: 'brand-grey',
         },
         icons: {
-            panelOpen: 'i-heroicons:arrow-small-right-solid',
-            panelClose: 'i-heroicons:arrow-small-left-solid',
+            panelOpen: 'i-carbon-chevron-right',
+            panelClose: 'i-carbon-chevron-left',
         },
     },
 })

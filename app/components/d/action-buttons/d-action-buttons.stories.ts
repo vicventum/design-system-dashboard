@@ -48,14 +48,14 @@ export const WithIcon: Story = {
     args: {
         ...Default.args,
         primaryButtonText: 'Add',
-        primaryButtonIcon: 'i-lucide-plus',
+        primaryButtonIcon: 'i-carbon-add',
     },
 }
 
 export const WithTrailingIcon: Story = {
     args: {
         primaryButtonText: 'Next',
-        primaryButtonTrailingIcon: 'i-lucide-arrow-right',
+        primaryButtonTrailingIcon: 'i-carbon-arrow-right',
         secondaryButtonText: 'Back',
     },
 }

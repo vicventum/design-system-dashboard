@@ -23,7 +23,7 @@ const meta = {
         },
         template: `
         <BDropdownAvatar v-bind="args">
-            <UButton icon="i-lucide-menu" color="neutral" variant="outline" />
+            <UButton icon="i-carbon-menu" color="neutral" variant="outline" />
         </BDropdownAvatar>
     `,
     }),
@@ -48,8 +48,8 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const items = [
-    [{ label: 'Profile', icon: 'heroicons:user' }],
-    [{ label: 'Settings', icon: 'heroicons:cog-6-tooth' }],
+    [{ label: 'Profile', icon: 'i-carbon-user' }],
+    [{ label: 'Settings', icon: 'i-carbon-settings' }],
 ] satisfies DropdownMenuItem[][]
 
 export const Default: Story = {
@@ -73,7 +73,7 @@ export const WithAButtonAvatarDropdownComponent: Story = {
                 <AButtonAvatarDropdown
                     label="Custom Trigger"
                     color="success"
-                    trailing-icon="i-heroicons-chevron-down"
+                    trailing-icon="i-carbon-chevron-down"
                     src="https://avatars.githubusercontent.com/u/739984?v=4"
                 />
             </span>
@@ -89,9 +89,9 @@ export const WithAButtonAvatarDropdownComponent: Story = {
             [
                 {
                     label: 'Logout',
-                    icon: 'heroicons:arrow-left-on-rectangle',
+                    icon: 'i-carbon-logout',
                     color: 'error',
-                    trailingIcon: 'heroicons:arrow-left-on-rectangle',
+                    trailingIcon: 'i-carbon-logout',
                 },
             ],
         ],
@@ -101,7 +101,7 @@ export const WithAButtonAvatarDropdownComponent: Story = {
 export const Minimal: Story = {
     args: {
         userName: 'Jane',
-        items: [[{ label: 'Logout', icon: 'heroicons:arrow-left-on-rectangle' }]],
+        items: [[{ label: 'Logout', icon: 'i-carbon-logout' }]],
     },
 }
 
@@ -122,7 +122,7 @@ export const CustomTrigger: Story = {
         },
         template: `
         <BDropdownAvatar v-bind="args">
-            <UButton label="Custom Trigger" color="primary" trailing-icon="i-heroicons-chevron-down" />
+            <UButton label="Custom Trigger" color="primary" trailing-icon="i-carbon-chevron-down" />
         </BDropdownAvatar>
     `,
     }),

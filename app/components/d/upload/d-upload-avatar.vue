@@ -85,7 +85,7 @@ function handleUploadImage(event: Event): void {
                 class="bg-primary-50 grid size-20 place-items-center rounded-md"
                 @click="inputFileRef?.click()"
             >
-                <UIcon name="heroicons:photo" class="size-6 text-neutral-900" />
+                <UIcon name="i-carbon-image" class="size-6 text-neutral-900" />
             </div>
         </div>
         <UButton :color="buttonColor" variant="outline" @click="inputFileRef?.click()" :size="buttonSize">

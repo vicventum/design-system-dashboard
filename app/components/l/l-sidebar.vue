@@ -96,7 +96,7 @@ defineSlots<{
             <UDashboardSidebarCollapse
                 color="primary"
                 variant="solid"
-                class="absolute top-[90px] right-[-20px] z-100"
+                class="absolute top-[90px] right-[-16px] z-100"
             />
 
             <slot v-if="$slots.body" name="body" :collapsed="collapsed" />

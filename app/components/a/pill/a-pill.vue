@@ -96,7 +96,7 @@ const textSize = computed(() => {
                     : undefined
             "
             :label="label"
-            :trailing-icon="isClosable ? 'heroicons:x-mark' : ''"
+            :trailing-icon="isClosable ? 'i-carbon-close' : ''"
             :size="size"
             :ui="{
                 base: textSize,
@@ -115,7 +115,7 @@ const textSize = computed(() => {
                     }"
                     :color="color"
                     :variant="variant === 'solid' ? 'solid' : 'icon'"
-                    icon="heroicons:x-mark"
+                    icon="i-carbon-close"
                     class="rounded-full p-0.5 font-normal"
                     @click="emit('on-close')"
                 />

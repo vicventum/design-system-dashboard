@@ -39,7 +39,7 @@ const meta = {
             },
             template: `
           <div>
-            <UButton label="Open Danger Modal" color="error" @click="args.modelValue=true" icon="i-lucide-trash" />
+            <UButton label="Open Danger Modal" color="error" @click="args.modelValue=true" icon="i-carbon-trash-can" />
 
             <CModalDanger v-bind="args" v-model="args.modelValue" />
           </div>
@@ -86,7 +86,7 @@ export const WithSlot: Story = {
             },
             template: `
           <div>
-            <UButton label="Open Danger Slot Modal" color="error" @click="args.modelValue=true" icon="i-lucide-trash" />
+            <UButton label="Open Danger Slot Modal" color="error" @click="args.modelValue=true" icon="i-carbon-trash-can" />
 
             <CModalDanger v-bind="args" v-model="args.modelValue">
                 <div class="space-y-4">

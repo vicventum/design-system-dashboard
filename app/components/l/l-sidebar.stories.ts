@@ -68,13 +68,13 @@ const mockLinksBody: NavigationMenuItem[][] = [
     [
         {
             label: 'Dashboard',
-            icon: 'i-lucide-layout-dashboard',
+            icon: 'i-carbon-dashboard',
             to: '/',
             badge: 'New',
         },
         {
             label: 'Projects',
-            icon: 'i-lucide-folder',
+            icon: 'i-carbon-folder',
             to: '/projects',
             children: [
                 { label: 'Web Development', to: '/projects/web' },
@@ -83,19 +83,19 @@ const mockLinksBody: NavigationMenuItem[][] = [
         },
         {
             label: 'Analytics',
-            icon: 'i-lucide-trending-up',
+            icon: 'i-carbon-chart-line',
             to: '/analytics',
         },
     ],
     [
         {
             label: 'Teams',
-            icon: 'i-lucide-users',
+            icon: 'i-carbon-group',
             to: '/teams',
         },
         {
             label: 'Settings',
-            icon: 'i-lucide-settings',
+            icon: 'i-carbon-settings',
             to: '/settings',
         },
     ],
@@ -105,7 +105,7 @@ const mockLinksBodyBottom: NavigationMenuItem[][] = [
     [
         {
             label: 'Documentation',
-            icon: 'i-lucide-book-open',
+            icon: 'i-carbon-book',
             to: '/docs',
         },
     ],
@@ -115,12 +115,12 @@ const mockLinksFooter: NavigationMenuItem[][] = [
     [
         {
             label: 'Help & Support',
-            icon: 'i-lucide-help-circle',
+            icon: 'i-carbon-help',
             to: '/support',
         },
         {
             label: 'Theme',
-            icon: 'i-lucide-sun',
+            icon: 'i-carbon-sun',
             click: fn(),
         },
     ],

@@ -33,13 +33,13 @@ const styles = {
     active: {
         color: 'primary' as BadgeColor,
         variant: 'solid' as BadgeVariant,
-        icon: 'heroicons:check-20-solid',
+        icon: 'i-carbon-checkmark',
     },
     inactive: { color: 'neutral' as BadgeColor, variant: 'subtle' as BadgeVariant },
     error: {
         color: 'error' as BadgeColor,
         variant: 'soft' as BadgeVariant,
-        icon: 'heroicons:x-circle-20-solid',
+        icon: 'i-carbon-close-filled',
     },
 }
 

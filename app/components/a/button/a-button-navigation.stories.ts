@@ -34,7 +34,7 @@ export default meta
 
 export const Default: Story = {
     args: {
-        icon: 'heroicons:arrow-left-16-solid',
+        icon: 'i-carbon-arrow-left',
         to: '',
         hasBackAction: false,
     },
@@ -42,7 +42,7 @@ export const Default: Story = {
 
 export const CustomIconWithCustomRoute: Story = {
     args: {
-        icon: 'heroicons:home-20-solid',
+        icon: 'i-carbon-home',
         to: '/',
         hasBackAction: false,
     },
@@ -50,7 +50,7 @@ export const CustomIconWithCustomRoute: Story = {
 
 export const HasBackAction: Story = {
     args: {
-        icon: 'heroicons:arrow-left-16-solid',
+        icon: 'i-carbon-arrow-left',
         to: '',
         hasBackAction: true,
     },
@@ -58,7 +58,7 @@ export const HasBackAction: Story = {
 
 export const LargeButton: Story = {
     args: {
-        icon: 'heroicons:arrow-left-16-solid',
+        icon: 'i-carbon-arrow-left',
         to: '',
         hasBackAction: true,
         size: 'xl',

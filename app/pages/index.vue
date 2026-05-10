@@ -3,8 +3,8 @@ import type { DropdownMenuItem, NavigationMenuItem } from '@nuxt/ui'
 import type { NavbarLinks } from '~/types'
 
 const menuItems = [
-    [{ label: 'Profile', icon: 'heroicons:user' }],
-    [{ label: 'Settings', icon: 'heroicons:cog-6-tooth' }],
+    [{ label: 'Profile', icon: 'i-carbon-user' }],
+    [{ label: 'Settings', icon: 'i-carbon-settings' }],
 ] satisfies DropdownMenuItem[][]
 
 const sidebarLinks = [
@@ -15,7 +15,7 @@ const sidebarLinks = [
         },
         {
             label: 'Estadísticas sanitarias',
-            icon: 'i-lucide-activity',
+            icon: 'i-carbon-activity',
             // to: '/estadisticas-sanitarias',
             to: '/',
             onSelect: (e) => {
@@ -25,39 +25,39 @@ const sidebarLinks = [
         },
         {
             label: 'Historias clínicas',
-            icon: 'i-lucide-clipboard-list',
+            icon: 'i-carbon-task-tools',
             to: '/historias-clinicas',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Alarmas',
-            icon: 'i-lucide-alert-triangle',
+            icon: 'i-carbon-warning',
             to: '/alarmas',
             badge: '0',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Calendario de visitas',
-            icon: 'i-lucide-calendar',
+            icon: 'i-carbon-calendar',
             to: '/calendario',
             defaultOpen: true,
             type: 'trigger',
             children: [
                 {
                     label: 'Mi agenda',
-                    icon: 'i-lucide-calendar-days',
+                    icon: 'i-carbon-calendar',
                     to: '/calendario/mi-agenda',
                     onSelect: () => (isOpen.value = false),
                 },
                 {
                     label: 'Todas las visitas',
-                    icon: 'i-lucide-users-2',
+                    icon: 'i-carbon-group',
                     to: '/calendario/todas-las-visitas',
                     onSelect: () => (isOpen.value = false),
                 },
                 {
                     label: 'Solicitudes de pacientes',
-                    icon: 'i-lucide-hand-metal',
+                    icon: 'i-carbon-thumbs-up',
                     to: '/calendario/solicitudes',
                     onSelect: () => (isOpen.value = false),
                 },
@@ -65,19 +65,19 @@ const sidebarLinks = [
         },
         {
             label: 'Rutas de visitas',
-            icon: 'i-lucide-navigation',
+            icon: 'i-carbon-map',
             to: '/rutas',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Reportes de alertas',
-            icon: 'i-lucide-alert-octagon',
+            icon: 'i-carbon-warning-alt',
             to: '/reportes-alertas',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Mensajería',
-            icon: 'i-lucide-message-circle',
+            icon: 'i-carbon-chat',
             to: '/mensajeria',
             onSelect: () => (isOpen.value = false),
         },
@@ -87,25 +87,25 @@ const sidebarLinks = [
         },
         {
             label: 'Facturación',
-            icon: 'i-lucide-file-text',
+            icon: 'i-carbon-document',
             to: '/finanzas/facturacion',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Estadísticas Financieras',
-            icon: 'i-lucide-bar-chart-3',
+            icon: 'i-carbon-chart-bar',
             to: '/finanzas/estadisticas',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Cartera de Clientes',
-            icon: 'i-lucide-briefcase',
+            icon: 'i-carbon-portfolio',
             to: '/finanzas/cartera-clientes',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Resumen del Paciente',
-            icon: 'i-lucide-user-cog',
+            icon: 'i-carbon-user-settings',
             to: '/finanzas/resumen-paciente',
             onSelect: () => (isOpen.value = false),
         },
@@ -115,25 +115,25 @@ const sidebarLinks = [
         },
         {
             label: 'Colaboradores',
-            icon: 'i-lucide-users',
+            icon: 'i-carbon-group',
             to: '/rrhh/colaboradores',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Solicitudes de ausencias',
-            icon: 'i-lucide-palmtree',
+            icon: 'i-carbon-tree',
             to: '/rrhh/ausencias',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Cuidadores',
-            icon: 'i-lucide-heart-handshake',
+            icon: 'i-carbon-partnership',
             to: '/rrhh/cuidadores',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Roles y permisos',
-            icon: 'i-lucide-key',
+            icon: 'i-carbon-password',
             to: '/rrhh/roles',
             onSelect: () => (isOpen.value = false),
         },
@@ -141,13 +141,13 @@ const sidebarLinks = [
     [
         {
             label: 'Historia de cambios',
-            icon: 'i-lucide-history',
+            icon: 'i-carbon-recently-viewed',
             to: '/historia-cambios',
             onSelect: () => (isOpen.value = false),
         },
         {
             label: 'Configuraciones generales',
-            icon: 'i-lucide-settings',
+            icon: 'i-carbon-settings',
             to: '/configuracion',
             onSelect: () => (isOpen.value = false),
         },

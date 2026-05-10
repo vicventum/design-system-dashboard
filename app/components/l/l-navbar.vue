@@ -53,9 +53,26 @@ const props = withDefaults(defineProps<Props>(), {
     searchPlaceholder: 'Search...',
     searchItems: () => [],
     searchShortcut: '/',
-    links: () => [],
-    menuUserName: 'User',
-    menuItems: () => [],
+    links: () => [
+        { label: 'Home', icon: 'i-carbon-home', to: '/' },
+        { label: 'Projects', icon: 'i-carbon-folder', to: '/projects' },
+        { label: 'Team', icon: 'i-carbon-group', to: '/team' },
+        { label: 'Settings', icon: 'i-carbon-settings', to: '/settings' },
+    ],
+    menuUserName: 'John Doe',
+    menuUserEmail: 'john.doe@example.com',
+    menuUserAvatarSrc: 'https://github.com/vicventum.png',
+    menuItems: () => [
+        [
+            { label: 'My profile', icon: 'i-carbon-user', to: '/profile' },
+            { label: 'Settings', icon: 'i-carbon-settings', to: '/settings' },
+        ],
+        [
+            { label: 'Release notes', icon: 'i-carbon-bullhorn' },
+            { label: 'Help & Support', icon: 'i-carbon-help' },
+        ],
+        [{ label: 'Sign out', icon: 'i-carbon-logout' }],
+    ],
     hasSearch: true,
     hasNotification: false,
 })
@@ -103,7 +120,7 @@ defineSlots<{
                 ref="inputRef"
                 v-model="searchTerm"
                 :placeholder="searchPlaceholder"
-                icon="i-lucide-search"
+                icon="i-carbon-search"
                 name="search"
                 class="w-60"
                 :ui="{ trailing: 'pe-1' }"
@@ -113,7 +130,7 @@ defineSlots<{
                         color="neutral"
                         variant="link"
                         size="sm"
-                        icon="i-lucide-circle-x"
+                        icon="i-carbon-close-outline"
                         aria-label="Clear input"
                         @click="searchTerm = ''"
                     />
@@ -147,7 +164,7 @@ defineSlots<{
                         @click="emit('on-click-notifications')"
                     >
                         <UChip color="error" :show="hasNotification" inset>
-                            <UIcon name="i-lucide-bell" class="size-5 shrink-0" />
+                            <UIcon name="i-carbon-bell" class="size-5 shrink-0" />
                         </UChip>
                     </UButton>
                 </UTooltip>

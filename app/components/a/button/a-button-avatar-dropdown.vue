@@ -46,7 +46,7 @@ const emit = defineEmits<{
         class="bg-color-primary-100 flex items-center gap-2 rounded-full py-1 pr-2 pl-1 text-neutral-800 hover:text-neutral-50"
     >
         <UAvatar :src="src" size="sm" />
-        <UIcon name="heroicons:chevron-down-20-solid" class="size-5" />
+        <UIcon name="i-carbon-chevron-down" class="size-5" />
     </UButton> -->
     <UButton
         :avatar="{
@@ -54,7 +54,7 @@ const emit = defineEmits<{
             size: avatarSize,
         }"
         :size="buttonSize"
-        trailing-icon="i-lucide-chevron-down"
+        trailing-icon="i-carbon-chevron-down"
         color="primary"
         variant="ghost"
         class="rounded-full"

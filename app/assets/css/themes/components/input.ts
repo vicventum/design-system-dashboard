@@ -1,14 +1,14 @@
 export default /*ui*/ {
     slots: {
         root: 'w-full',
-        // base: 'bg-muted',
     },
     variants: {
         variant: {
             subtle: 'bg-muted',
+            outline: '',
         },
     },
     defaultVariants: {
-        variant: 'subtle',
+        variant: 'outline',
     },
 }

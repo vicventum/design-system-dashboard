@@ -88,28 +88,28 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const mockLinks = [
-    { label: 'Home', icon: 'i-lucide-home', to: '/' },
-    { label: 'Projects', icon: 'i-lucide-folder', to: '/projects' },
-    { label: 'Settings', icon: 'i-lucide-settings', to: '/settings' },
+    { label: 'Home', icon: 'i-carbon-home', to: '/' },
+    { label: 'Projects', icon: 'i-carbon-folder', to: '/projects' },
+    { label: 'Settings', icon: 'i-carbon-settings', to: '/settings' },
 ] satisfies NavbarLinks
 
 const mockMenuItems = [
     [
-        { label: 'My profile', icon: 'i-lucide-user', to: '/profile' },
-        { label: 'Settings', icon: 'i-lucide-settings', to: '/settings' },
+        { label: 'My profile', icon: 'i-carbon-user', to: '/profile' },
+        { label: 'Settings', icon: 'i-carbon-settings', to: '/settings' },
     ],
     [
-        { label: 'Release notes', icon: 'i-lucide-megaphone' },
-        { label: 'Help & Support', icon: 'i-lucide-help-circle' },
+        { label: 'Release notes', icon: 'i-carbon-bullhorn' },
+        { label: 'Help & Support', icon: 'i-carbon-help' },
     ],
-    [{ label: 'Sign out', icon: 'i-lucide-log-out' }],
+    [{ label: 'Sign out', icon: 'i-carbon-logout' }],
 ] satisfies DropdownMenuItem[][]
 
 const linksBody = [
     [
-        { label: 'Dashboard', icon: 'i-lucide-layout-dashboard', to: '/' },
-        { label: 'Analytics', icon: 'i-lucide-bar-chart-3', to: '/analytics' },
-        { label: 'Users', icon: 'i-lucide-users', to: '/users' },
+        { label: 'Dashboard', icon: 'i-carbon-dashboard', to: '/' },
+        { label: 'Analytics', icon: 'i-carbon-chart-bar', to: '/analytics' },
+        { label: 'Users', icon: 'i-carbon-group', to: '/users' },
     ],
 ] satisfies DropdownMenuItem[][]
 

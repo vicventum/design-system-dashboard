@@ -53,7 +53,7 @@ export const Main: Story = {
         title: 'Main Header',
         subtitle: 'Main subtitle description',
         variant: 'main',
-        leftButtonIcon: 'heroicons:arrow-left-16-solid',
+        leftButtonIcon: 'i-carbon-arrow-left',
         hasLeftButtonIcon: true,
     },
     render,
@@ -75,7 +75,7 @@ export const WithABCard: Story = {
         title: 'With a BCard',
         subtitle: 'Subtitle',
         variant: 'main',
-        leftButtonIcon: 'heroicons:arrow-left-16-solid',
+        leftButtonIcon: 'i-carbon-arrow-left',
         hasLeftButtonIcon: true,
     },
     render: (args: any) => ({

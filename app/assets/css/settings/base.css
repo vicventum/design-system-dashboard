@@ -23,16 +23,16 @@
         @apply size-1;
     }
     ::-webkit-scrollbar-thumb {
-        @apply bg-primary-400 rounded-sm transition-colors;
+        @apply bg-neutral-300 rounded-none transition-colors dark:bg-neutral-700;
     }
     ::-webkit-scrollbar-track {
         @apply bg-transparent;
     }
 
     ::selection {
-        @apply !bg-primary-500 text-neutral-50;
+        @apply !bg-neutral-800 text-neutral-50 dark:!bg-neutral-200 dark:text-neutral-900;
     }
     ::-moz-selection {
-        @apply !bg-primary-500 text-neutral-50;
+        @apply !bg-neutral-800 text-neutral-50 dark:!bg-neutral-200 dark:text-neutral-900;
     }
 }

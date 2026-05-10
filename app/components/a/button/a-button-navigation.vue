@@ -6,7 +6,7 @@ export type ButtonSize = InstanceType<typeof UButton>['$props']['size']
 interface Props {
     /**
      * Icon to display in the button
-     * @default 'heroicons:arrow-left-16-solid'
+     * @default 'i-carbon-arrow-left'
      */
     icon?: string
     /**
@@ -27,7 +27,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-    icon: 'heroicons:arrow-left-16-solid',
+    icon: 'i-carbon-arrow-left',
     to: '',
     hasBackAction: false,
     size: 'md',

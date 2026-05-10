@@ -35,7 +35,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
     subtitle: '',
     variant: 'main',
-    leftButtonIcon: 'heroicons:arrow-left-16-solid',
+    leftButtonIcon: 'i-carbon-arrow-left',
     leftButtonIconTo: '',
     hasLeftButtonIcon: false,
     classTitle: '',

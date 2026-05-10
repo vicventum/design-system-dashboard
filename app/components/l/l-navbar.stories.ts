@@ -45,22 +45,22 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const mockLinks = [
-    { label: 'Home', icon: 'i-lucide-home', to: '/' },
-    { label: 'Projects', icon: 'i-lucide-folder', to: '/projects' },
-    { label: 'Team', icon: 'i-lucide-users', to: '/team' },
-    { label: 'Settings', icon: 'i-lucide-settings', to: '/settings' },
+    { label: 'Home', icon: 'i-carbon-home', to: '/' },
+    { label: 'Projects', icon: 'i-carbon-folder', to: '/projects' },
+    { label: 'Team', icon: 'i-carbon-group', to: '/team' },
+    { label: 'Settings', icon: 'i-carbon-settings', to: '/settings' },
 ] satisfies NavbarLinks
 
 const mockMenuItems = [
     [
-        { label: 'My profile', icon: 'i-lucide-user', to: '/profile' },
-        { label: 'Settings', icon: 'i-lucide-settings', to: '/settings' },
+        { label: 'My profile', icon: 'i-carbon-user', to: '/profile' },
+        { label: 'Settings', icon: 'i-carbon-settings', to: '/settings' },
     ],
     [
-        { label: 'Release notes', icon: 'i-lucide-megaphone' },
-        { label: 'Help & Support', icon: 'i-lucide-help-circle' },
+        { label: 'Release notes', icon: 'i-carbon-bullhorn' },
+        { label: 'Help & Support', icon: 'i-carbon-help' },
     ],
-    [{ label: 'Sign out', icon: 'i-lucide-log-out' }],
+    [{ label: 'Sign out', icon: 'i-carbon-logout' }],
 ] satisfies DropdownMenuItem[][]
 
 export const Default: Story = {
