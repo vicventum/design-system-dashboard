@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { DropdownMenuItem, NavigationMenuItem } from '@nuxt/ui'
+import BSlideover from '~/components/b/slideover/b-slideover.vue'
 import type { NavbarLinks } from '~/types'
 
 const menuItems = [
@@ -10,156 +11,155 @@ const menuItems = [
 const sidebarLinks = [
     [
         {
-            label: 'Panel General',
+            label: 'General',
             type: 'label',
         },
         {
-            label: 'Estadísticas sanitarias',
-            icon: 'i-carbon-activity',
-            // to: '/estadisticas-sanitarias',
+            label: 'Dashboard',
+            icon: 'i-carbon-dashboard',
             to: '/',
             onSelect: (e) => {
-                console.log(e, isOpen.value, 'Estadísticas sanitarias')
                 isOpen.value = false
             },
         },
         {
-            label: 'Historias clínicas',
-            icon: 'i-carbon-task-tools',
-            to: '/historias-clinicas',
+            label: 'Projects',
+            icon: 'i-carbon-catalog',
+            to: '/projects',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Alarmas',
+            label: 'Alerts',
             icon: 'i-carbon-warning',
-            to: '/alarmas',
-            badge: '0',
+            to: '/alerts',
+            badge: '3',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Calendario de visitas',
+            label: 'Calendar',
             icon: 'i-carbon-calendar',
-            to: '/calendario',
+            to: '/calendar',
             defaultOpen: true,
             type: 'trigger',
             children: [
                 {
-                    label: 'Mi agenda',
+                    label: 'My Schedule',
                     icon: 'i-carbon-calendar',
-                    to: '/calendario/mi-agenda',
+                    to: '/calendar/my-schedule',
                     onSelect: () => (isOpen.value = false),
                 },
                 {
-                    label: 'Todas las visitas',
+                    label: 'All Events',
                     icon: 'i-carbon-group',
-                    to: '/calendario/todas-las-visitas',
+                    to: '/calendar/all-events',
                     onSelect: () => (isOpen.value = false),
                 },
                 {
-                    label: 'Solicitudes de pacientes',
+                    label: 'Requests',
                     icon: 'i-carbon-thumbs-up',
-                    to: '/calendario/solicitudes',
+                    to: '/calendar/requests',
                     onSelect: () => (isOpen.value = false),
                 },
             ],
         },
         {
-            label: 'Rutas de visitas',
-            icon: 'i-carbon-map',
-            to: '/rutas',
+            label: 'Tasks',
+            icon: 'i-carbon-task',
+            to: '/tasks',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Reportes de alertas',
-            icon: 'i-carbon-warning-alt',
-            to: '/reportes-alertas',
+            label: 'Reports',
+            icon: 'i-carbon-report',
+            to: '/reports',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Mensajería',
+            label: 'Messages',
             icon: 'i-carbon-chat',
-            to: '/mensajeria',
+            to: '/messages',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Finanzas',
+            label: 'Finance',
             type: 'label',
         },
         {
-            label: 'Facturación',
+            label: 'Invoices',
             icon: 'i-carbon-document',
-            to: '/finanzas/facturacion',
+            to: '/finance/invoices',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Estadísticas Financieras',
+            label: 'Financial Stats',
             icon: 'i-carbon-chart-bar',
-            to: '/finanzas/estadisticas',
+            to: '/finance/stats',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Cartera de Clientes',
+            label: 'Portfolio',
             icon: 'i-carbon-portfolio',
-            to: '/finanzas/cartera-clientes',
+            to: '/finance/portfolio',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Resumen del Paciente',
-            icon: 'i-carbon-user-settings',
-            to: '/finanzas/resumen-paciente',
+            label: 'Summary',
+            icon: 'i-carbon-summary',
+            to: '/finance/summary',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Recursos Humanos',
+            label: 'Team',
             type: 'label',
         },
         {
-            label: 'Colaboradores',
+            label: 'Members',
             icon: 'i-carbon-group',
-            to: '/rrhh/colaboradores',
+            to: '/team/members',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Solicitudes de ausencias',
+            label: 'Time Off',
             icon: 'i-carbon-tree',
-            to: '/rrhh/ausencias',
+            to: '/team/time-off',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Cuidadores',
+            label: 'Contractors',
             icon: 'i-carbon-partnership',
-            to: '/rrhh/cuidadores',
+            to: '/team/contractors',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Roles y permisos',
+            label: 'Roles & Permissions',
             icon: 'i-carbon-password',
-            to: '/rrhh/roles',
+            to: '/team/roles',
             onSelect: () => (isOpen.value = false),
         },
     ],
     [
         {
-            label: 'Historia de cambios',
+            label: 'Changelog',
             icon: 'i-carbon-recently-viewed',
-            to: '/historia-cambios',
+            to: '/changelog',
             onSelect: () => (isOpen.value = false),
         },
         {
-            label: 'Configuraciones generales',
+            label: 'Settings',
             icon: 'i-carbon-settings',
-            to: '/configuracion',
+            to: '/settings',
             onSelect: () => (isOpen.value = false),
         },
     ],
 ] satisfies NavigationMenuItem[][]
 
 const links = [
-    { label: 'Reportes pendientes', to: '/pending-reports' },
-    { label: 'Mi agenda', to: '/my-agenda' },
+    { label: 'Pending tasks', to: '/pending-tasks' },
+    { label: 'My schedule', to: '/my-schedule' },
 ] satisfies NavbarLinks
 
 const isOpen = ref(false)
+const isOpenSlideover = ref(false)
 const searchTerm = ref('')
 </script>
 
@@ -181,7 +181,7 @@ const searchTerm = ref('')
                 v-model:search-term="searchTerm"
                 :links="links"
                 :menu-items="menuItems"
-                search-placeholder="Buscar paciente"
+                search-placeholder="Search..."
                 menu-user-name="Victor"
                 menu-user-email="victor@email.com"
             />
@@ -198,6 +198,14 @@ const searchTerm = ref('')
                         suscipit veniam minus pariatur totam, impedit porro similique at, vero iusto quaerat,
                         ipsam ad aliquid id nulla iure voluptates.
                     </p>
+
+                </ACardInner>
+                <ACardInner>
+                    <UButton @click="isOpenSlideover = true" label="Open Slideover" color="neutral" variant="subtle" />
+
+                    <BSlideover v-model="isOpenSlideover" title="Slideover with description" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." class="w-1/2 max-w-[800px]">
+                        <p>This is the custom body of the slideover.</p>
+                    </BSlideover>
                 </ACardInner>
             </BCard>
         </template>
