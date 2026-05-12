@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/vicventum/design-system-dashboard/compare/v1.1.0...v1.2.0) (2026-05-12)
+
+
+### Bug Fixes
+
+* **ci:** :construction_worker: Corrige formato de URL de repositorio para semantic-release ([9a4e0a9](https://github.com/vicventum/design-system-dashboard/commit/9a4e0a96b7f085cc2b1856e1eaad5c0e7e61dcf6))
+* **dev-infra:** :green_heart: Corrige error de sincronización en el build entre el `package-lock.json` y el `package.json` ([2de836d](https://github.com/vicventum/design-system-dashboard/commit/2de836d442d2b4755c510df1bde2d09d6f3ce27d))
+
+
+### Features
+
+* **components:** :sparkles: Crea componente `BSlideover` y su story ([10654e8](https://github.com/vicventum/design-system-dashboard/commit/10654e800f3847b8acd715de625c2990899ce6c6))
+
 # [1.1.0](https://github.com/vicventum/design-system-dashboard-devmunity/compare/v1.0.6...v1.1.0) (2026-02-16)
 
 
